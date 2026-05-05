@@ -15,20 +15,25 @@
         }
         header {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: space-between;
             padding: 30px 0;
             border-bottom: 1px solid #e0e0e0;
             margin-bottom: 30px;
-            flex-wrap: wrap;
+        }
+        .logo-container {
+            margin-bottom: 20px;
         }
         .logo {
-            height: 100px;              /* increased from 80px */
+            height: 100px;
             width: auto;
             max-height: 120px;
         }
+        nav {
+            text-align: center;
+        }
         nav a {
-            margin-left: 20px;
+            margin: 0 15px;
             text-decoration: none;
             color: #0066cc;
             font-weight: 500;
@@ -38,27 +43,29 @@
         }
         h1 { color: #222; font-size: 2rem; margin-top: 0; }
         img.profile { width: 180px; border-radius: 50%; margin-bottom: 20px; }
+        footer {
+            margin-top: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+        }
         @media (max-width: 600px) {
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            nav {
-                margin-top: 15px;
-                width: 100%;
-            }
             nav a {
-                margin-left: 0;
-                margin-right: 15px;
+                display: block;
+                margin: 5px 0;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <a href="index.html">
-            <img src="images/logo.png" alt="Muna Clinic Logo" class="logo">
-        </a>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Muna Clinic Logo" class="logo">
+            </a>
+        </div>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -79,5 +86,9 @@
         <p>This website is my corner of the internet where I share my journey, clinical insights, and the vision behind Muna Clinic. Right now, while I train, the clinic serves as a side project — a place to write, think out loud, and explore ideas about emergency care, primary medicine, and healthcare in Nepal. After residency, it will become an appointment-based practice and a home for community-focused emergency and primary care.</p>
         <p>Thanks for stopping by. Whether you're a patient, a fellow clinician, or someone curious about medicine, I'm glad you're here.</p>
     </main>
+
+    <footer>
+        <p>&copy; 2026 Dr. Abhigya Parajuli &amp; Muna Clinic Pvt. Ltd.</p>
+    </footer>
 </body>
 </html>
