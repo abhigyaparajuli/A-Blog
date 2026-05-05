@@ -31,7 +31,7 @@
             margin-bottom: 20px;
         }
         .logo {
-            height: 110px;          /* slightly increased */
+            height: 110px;
             width: auto;
             max-height: 130px;
         }
@@ -49,8 +49,6 @@
         nav a:hover {
             text-decoration: underline;
         }
-
-        /* Hamburger button (hidden on desktop) */
         .menu-toggle {
             display: none;
             background: none;
@@ -60,20 +58,20 @@
             color: #5c815b;
             font-family: 'Belleza', sans-serif;
             padding: 0 10px;
+            line-height: 1;
         }
-
         @media (max-width: 768px) {
             .menu-toggle {
-                display: block;       /* visible on tablet/mobile */
+                display: block;
             }
             nav .nav-links {
-                display: none;        /* hide links by default */
+                display: none;
                 flex-direction: column;
                 width: 100%;
                 margin-top: 10px;
             }
             nav .nav-links.active {
-                display: flex;        /* show when toggled */
+                display: flex;
             }
             nav a {
                 display: block;
@@ -81,7 +79,6 @@
                 font-size: 1.1rem;
             }
         }
-
         h1, h2 {
             font-family: 'Belleza', sans-serif;
             color: #5c815b;
@@ -108,7 +105,7 @@
             </a>
         </div>
         <nav>
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <button class="menu-toggle" onclick="toggleMenu()">+</button>
             <div class="nav-links" id="navLinks">
                 <a href="index.html">Home</a>
                 <a href="doctor.html">Doctor</a>
@@ -122,7 +119,6 @@
 
     <main>
         <h1>Dr. Abhigya Parajuli</h1>
-
         <p>I’ve been called “Muna” since I can remember — a nickname my family gave me in childhood that somehow never left. It’s a name that reminds me where I come from, and it’s the name I chose for the clinic that will one day be my professional home.</p>
         <p>I completed my MBBS at Gandaki Medical College, Pokhara, graduating with first division and completing a one-year rotating internship across General Surgery, Neurosurgery, Internal Medicine, Emergency, Obstetrics &amp; Gynaecology, Paediatrics, and Orthopaedics. During that year, I learned to suture, place catheters and NG tubes, assist in major surgeries, and — more importantly — to stay calm and think clearly when minutes matter.</p>
         <p>That pull toward acute care led me to pursue an <strong>MD in General Practice &amp; Emergency Medicine at BP Koirala Institute of Health Sciences</strong>, which I began in March 2026. Emergency medicine, to me, is the intersection of skill and empathy: knowing what to do and being present for the person in front of you.</p>
